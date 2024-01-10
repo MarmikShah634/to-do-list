@@ -2,7 +2,7 @@ import json
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
-with open('flaskenv/config.json', 'r') as c:
+with open('config.json', 'r') as c:
     params = json.load(c)['params']
 
 app =Flask(__name__,template_folder='templates')
